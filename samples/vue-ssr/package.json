@@ -1,0 +1,39 @@
+{
+ "name": "sample-generate-content",
+ "version": "0.0.1",
+ "description": "Sample for the generateContent proposed option on webpack-dev-middleware",
+ "main": "src/index.js",
+ "scripts": {
+  "dev": "cross-env NODE_ENV=development webpack-serve --config config/webpack.config.js --open",
+  "build": "cross-env NODE_ENV=production webpack --config config/webpack.config.js --progress --hide-modules"
+ },
+ "author": "",
+ "license": "ISC",
+ "devDependencies": {
+  "babel-core": "^6.26.3",
+  "babel-loader": "^7.1.5",
+  "babel-preset-env": "^1.7.0",
+  "babel-preset-stage-3": "^6.24.1",
+  "babel-register": "^6.26.0",
+  "cross-env": "^5.2.0",
+  "css-loader": "^1.0.0",
+  "file-loader": "^2.0.0",
+  "html-webpack-plugin": "^3.2.0",
+  "mini-css-extract-plugin": "^0.4.2",
+  "node-sass": "^4.9.3",
+  "sass-loader": "^7.1.0",
+  "style-loader": "^0.22.1",
+  "url-loader": "^1.1.1",
+  "vue-loader": "^15.4.0",
+  "vue-server-renderer": "^2.5.17",
+  "vue-template-compiler": "^2.5.17",
+  "webpack": "^4.17.1",
+  "webpack-cli": "^3.1.0",
+  "webpack-dev-middleware": "file:../../",
+  "webpack-serve": "^2.0.2"
+ },
+ "dependencies": {
+  "vue": "^2.5.17",
+  "vue-router": "^3.0.1"
+ }
+}
